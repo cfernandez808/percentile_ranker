@@ -9,8 +9,6 @@ import ScoresTest from './test/ScoresTest';
 
 import { withAuthenticator} from '@aws-amplify/ui-react';
 
-
-
 const App = () => {
   const [searchId, setSearchId] = useState(0);
   const [visible, setVisible] = useState(false);

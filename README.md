@@ -1,6 +1,6 @@
 # How to Run this App
 
-Follow this link:
+Follow this link: https://dev.d2699inxgidwig.amplifyapp.com
 
 Enter Cognitio credentials:
 Username: hiSimpleFractal
