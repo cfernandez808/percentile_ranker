@@ -24,9 +24,14 @@ const InputForm = (props) => {
 
   return (
     <React.Fragment>
+      <br /> <br />
       <Container>
         <FormControl className={classes.margin}>
-          <InputLabel htmlFor="user-id-input">Input the Candidate's ID:</InputLabel>
+          <InputLabel
+            htmlFor="user-id-input"
+          >
+            Input the Candidate's ID:
+          </InputLabel>
           <Input
             id="user-id-input"
             value={searchId}

@@ -17,11 +17,12 @@ const useStyles = makeStyles((theme) => ({
   },
   nav: {
     backgroundColor: "#3D73A3",
+    width: '100vw',
   },
 }));
 
 /* Simple navbar/header */
-const Navbar = (props) => {
+const Navbar = () => {
   const classes = useStyles();
 
   return (

@@ -3,6 +3,7 @@ import Navbar from './Components/Main/Navbar';
 import InputForm from './Components/Main/InputForm';
 import SubmitBtn from './Components/Main/SubmitBtn';
 import PercentOutput from './Components/Main/PercentOutput';
+import Background from './Components/Main/Background';
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
 
@@ -14,17 +15,19 @@ function App() {
   return (
     <div>
       <Navbar />
-      <br /> <br />
-      <InputForm
-        serachId={searchId}
-        setSearchId={setSearchId}
-      />
-      <SubmitBtn
-        setSubmission={setSubmission}
-        setVisible={setVisible}
-        visible={visible}
-        searchId={searchId}
-      />
+      <div style={{position: 'relative'}}>
+        <Background />
+        <InputForm
+          serachId={searchId}
+          setSearchId={setSearchId}
+        />
+        <SubmitBtn
+          setSubmission={setSubmission}
+          setVisible={setVisible}
+          visible={visible}
+          searchId={searchId}
+        />
+      </div>
       <PercentOutput visible={visible} setVisible={setVisible} submission={submission} />
     </div>
   );
