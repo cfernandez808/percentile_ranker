@@ -20,6 +20,11 @@ export const zscore = (scores, userScore) => {
   return ((userScore - avg) / sd)
 }
 
+//Finds if two companies are similar
+export const isSimilar = (company1, company2) => {
+  return Math.abs(company1 - company2) < 0.15
+}
+
 //Output: decimal representing percentile rank of score, based from zscore calculation
 export const percentile = (zscore) => {
   return ztable(zscore)
