@@ -5,8 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography  from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 
-import './App.css';
-import brand from './brand.png';
+import '../../public/Nav.css';
+import brand from '../../public/brand.png';
 
 const useStyles = makeStyles((theme) => ({
   title: {

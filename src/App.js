@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import Navbar from './Navbar';
-import InputForm from './InputForm';
-import SubmitBtn from './SubmitBtn';
-import PercentOutput from './PercentOutput';
+import Navbar from './Components/Main/Navbar';
+import InputForm from './Components/Main/InputForm';
+import SubmitBtn from './Components/Main/SubmitBtn';
+import PercentOutput from './Components/Main/PercentOutput';
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
 

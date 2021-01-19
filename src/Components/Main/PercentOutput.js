@@ -7,7 +7,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 
-import OutputText from './OutputText';
+import OutputText from '../Percentile/OutputText';
 
 /* Slide dialog box up from bottom of screen*/
 const Transition = React.forwardRef(function Transition(props, ref) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import {scores} from './data/dummyData';
+import {scores} from '../../data/dummyData';
 import Calc from './PercentCalc';
 
 /* Text that dynamically fills the dialog box based on the entered Candidate ID */

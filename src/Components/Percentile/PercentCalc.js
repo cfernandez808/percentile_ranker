@@ -1,5 +1,5 @@
 import {percentile, zscore, isSimilar} from './PercentHelpers';
-import {companies, scores} from './data/dummyData';
+import {companies, scores} from '../../data/dummyData';
 
 /* Percentile rank calculator and more */
 export default class Calc {
