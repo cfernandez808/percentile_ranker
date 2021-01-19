@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button'
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
@@ -16,13 +15,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const InputForm = (props) => {
-  const {userId, setUserId, visible, setVisible} = props
+  const {searchId, setSearchId} = props
   const classes = useStyles();
   const handleChangeText = (e) => {
-    setUserId(e.target.value)
-  }
-  const handleSubmit = (e) => {
-    setVisible(!visible)
+    setSearchId(e.target.value)
   }
   return (
     <React.Fragment>
@@ -31,7 +27,7 @@ const InputForm = (props) => {
           <InputLabel htmlFor="user-id-input">Input the Candidate's ID:</InputLabel>
           <Input
             id="user-id-input"
-            value={userId}
+            value={searchId}
             onChange={handleChangeText}
             startAdornment={
               <InputAdornment position="start">
@@ -40,12 +36,6 @@ const InputForm = (props) => {
             }
           />
         </FormControl>
-        <Button
-          onClick={handleSubmit}
-          variant="contained"
-        >
-          Get Percentile Ranks
-        </Button>
       </Container>
     </React.Fragment>
   )

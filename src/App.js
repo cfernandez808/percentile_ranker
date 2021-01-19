@@ -3,25 +3,37 @@ import ComsPercent from './ComsPercent';
 import CodingPercent from './CodingPercent';
 import Navbar from './Navbar';
 import InputForm from './InputForm';
+import SubmitBtn from './SubmitBtn';
 
 
 
 
 function App() {
-  const [userId, setUserId] = useState(0);
+  const [searchId, setSearchId] = useState(890);
   const [visible, setVisible] = useState(false);
+  const [submission, setSubmission] = useState(890)
 
+
+  console.log(submission)
   return (
     <div>
       <Navbar />
       <InputForm
-        userId={userId}
-        setUserId={setUserId}
-        visible={visible}
-        setVisible={setVisible}
+        serachId={searchId}
+        setSearchId={setSearchId}
       />
-      <ComsPercent visible={visible}/>
-      <CodingPercent />
+      <SubmitBtn
+        setSubmission={setSubmission}
+        setVisible={setVisible}
+        visible={visible}
+        searchId={searchId}
+      />
+      { visible ?
+      <ComsPercent submission={submission} /> : ''
+      }
+      { visible ?
+      <CodingPercent submission={submission} /> : ''
+      }
     </div>
   );
 }
