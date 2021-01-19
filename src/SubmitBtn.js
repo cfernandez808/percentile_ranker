@@ -1,8 +1,22 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 
+const useStyles = makeStyles((theme) => ({
+  alignment: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  btn : {
+    backgroundColor: '#3D73A3',
+    color: 'white'
+  }
+}));
+
 const SubmitBtn = (props) => {
+  const classes = useStyles();
   const {setSubmission, setVisible, visible, searchId} = props
   const handleSubmit = () => {
     setSubmission(searchId)
@@ -10,8 +24,9 @@ const SubmitBtn = (props) => {
   }
   return (
     <React.Fragment>
-      <Container component="div">
+      <Container className={classes.alignment} component="div">
         <Button
+          className={classes.btn}
           onClick={handleSubmit}
           variant="contained"
         >

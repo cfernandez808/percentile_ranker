@@ -12,8 +12,6 @@ function App() {
   const [visible, setVisible] = useState(false);
   const [submission, setSubmission] = useState(0)
 
-
-  console.log(submission)
   return (
     <div>
       <Navbar />
