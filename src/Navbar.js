@@ -9,9 +9,6 @@ import './App.css';
 import brand from './brand.png';
 
 const useStyles = makeStyles((theme) => ({
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
   title: {
     flexGrow: 1,
     color: "white",
@@ -23,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/* Simple navbar/header */
 const Navbar = (props) => {
   const classes = useStyles();
 

@@ -14,12 +14,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/* User enters Candidate ID here */
 const InputForm = (props) => {
   const {searchId, setSearchId} = props
   const classes = useStyles();
   const handleChangeText = (e) => {
     setSearchId(e.target.value)
   }
+
   return (
     <React.Fragment>
       <Container>

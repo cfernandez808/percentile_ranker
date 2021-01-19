@@ -9,10 +9,12 @@ import Slide from '@material-ui/core/Slide';
 
 import OutputText from './OutputText';
 
+/* Slide dialog box up from bottom of screen*/
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+/* Dynamic dialog that pops up when the user submits the Candidate ID */
 const PercentOutput = (props) => {
   const {visible, setVisible, submission} = props
 

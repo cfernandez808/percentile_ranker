@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+/* Submits the Candidate's ID */
 const SubmitBtn = (props) => {
   const classes = useStyles();
   const {setSubmission, setVisible, visible, searchId} = props

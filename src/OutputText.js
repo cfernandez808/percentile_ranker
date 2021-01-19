@@ -1,17 +1,20 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import {companies, scores} from './data/dummyData';
-import {percentile, zscore, isSimilar} from './PercentHelpers';
+import {scores} from './data/dummyData';
 import Calc from './PercentCalc';
 
-
+/* Text that dynamically fills the dialog box based on the entered Candidate ID */
+/* if the Candidate's company has no other substitutes/similar companies, the   */
+/* text changes to satisfy 1 company                                            */
 const OutputText = (props) => {
   const {submission} = props;
   const submitNum = Number(submission);
 
+  //To check if the user exists on line 22
   const allUsers = scores.map(user => user.candidate_id);
   const user = {...scores.filter(user => user.candidate_id === submitNum)[0]};
 
+  //Calcuations for percentile ranks performed within these classes
   const comsCalc = new Calc(user, 'communication');
   const codingCalc = new Calc(user, 'coding');
 
