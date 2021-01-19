@@ -23,7 +23,7 @@ const PercentOutput = (props) => {
   }
 
   return (
-    <div>
+    <React.Fragment>
       <Dialog
         open={visible}
         TransitionComponent={Transition}
@@ -42,7 +42,7 @@ const PercentOutput = (props) => {
           </Button>
         </DialogActions>
       </Dialog>
-    </div>
+    </React.Fragment>
   );
 }
 

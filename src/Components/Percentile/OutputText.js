@@ -32,10 +32,10 @@ const OutputText = (props) => {
   return (
     <React.Fragment>
       { allUsers.includes(submitNum) ?
-      <Container component="div">
+      <Container component="span">
         Based on {comsCalc.similarCompanies().length} {comsCalc.similarCompanies().length > 1 ? 'similar companies, including the candidate\'s own' : 'company (the candidate\'s)'}, among {comsCalc.scoreArr().length} {comsCalc.userTitle}s, they rank in the {comsCalc.rank().toFixed(2)} Percentile  in Communcations and the {codingCalc.rank().toFixed(2)} Percentile regarding Coding aptitude.
       </Container> :
-      <Container>
+      <Container component="span">
         Please enter a valid Candidate ID
       </Container>
       }

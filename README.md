@@ -30,4 +30,4 @@ Material Ui
 
 #### Tests
 
-I tried implementing Mocha/Chai, but in my 'tests' file you'll see I noted that I couldn't get it to work and I apologize. I tested my AWS routes on my local machine using Postman.
+My tests are ran in the Browser's console. Simply log in. The tests check to see if the application is properly connected to the AWS backend.
