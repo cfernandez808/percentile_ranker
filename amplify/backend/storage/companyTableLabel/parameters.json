@@ -1,0 +1,5 @@
+{
+    "tableName": "companyTableLabel",
+    "partitionKeyName": "company_id",
+    "partitionKeyType": "N"
+}

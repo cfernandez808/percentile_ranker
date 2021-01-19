@@ -5,12 +5,15 @@ import SubmitBtn from './Components/Main/SubmitBtn';
 import PercentOutput from './Components/Main/PercentOutput';
 import Background from './Components/Main/Background';
 
-import { withAuthenticator } from '@aws-amplify/ui-react';
 
-function App() {
+import { withAuthenticator} from '@aws-amplify/ui-react';
+
+
+
+const App = () => {
   const [searchId, setSearchId] = useState(0);
   const [visible, setVisible] = useState(false);
-  const [submission, setSubmission] = useState(0)
+  const [submission, setSubmission] = useState(0);
 
   return (
     <div>

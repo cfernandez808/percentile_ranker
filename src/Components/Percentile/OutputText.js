@@ -1,12 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Container from '@material-ui/core/Container';
-import {scores} from '../../data/dummyData';
+import {API} from 'aws-amplify';
+
 import Calc from './PercentCalc';
 
 /* Text that dynamically fills the dialog box based on the entered Candidate ID */
 /* if the Candidate's company has no other substitutes/similar companies, the   */
 /* text changes to satisfy 1 company                                            */
 const OutputText = (props) => {
+  const [scores, setScores] = useState([])
+
+  /* DynamoDB */
+  useEffect(() => {
+    API.get('scoreApi', '/scores/candidate_id')
+    .then(response => setScores(response))
+  }, [])
   const {submission} = props;
   const submitNum = Number(submission);
 

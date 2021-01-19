@@ -1,0 +1,39 @@
+{
+    "paths": [
+        {
+            "name": "/companies",
+            "lambdaFunction": "companyFunction",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/companies"
+        }
+    ],
+    "resourceName": "comapyApi",
+    "apiName": "comapyApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "companyFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-percentileranker-dev-191252-authRole",
+        "unAuthRoleName": "amplify-percentileranker-dev-191252-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "companyFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "tableName": "scoreTableLabel",
+    "partitionKeyName": "candidate_id",
+    "partitionKeyType": "N"
+}
