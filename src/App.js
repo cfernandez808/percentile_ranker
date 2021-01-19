@@ -1,17 +1,16 @@
 import React, {useState} from 'react'
-import ComsPercent from './ComsPercent';
-import CodingPercent from './CodingPercent';
 import Navbar from './Navbar';
 import InputForm from './InputForm';
 import SubmitBtn from './SubmitBtn';
+import PercentOutput from './PercentOutput';
 
 
 
 
 function App() {
-  const [searchId, setSearchId] = useState(890);
+  const [searchId, setSearchId] = useState(0);
   const [visible, setVisible] = useState(false);
-  const [submission, setSubmission] = useState(890)
+  const [submission, setSubmission] = useState(0)
 
 
   console.log(submission)
@@ -28,12 +27,7 @@ function App() {
         visible={visible}
         searchId={searchId}
       />
-      { visible ?
-      <ComsPercent submission={submission} /> : ''
-      }
-      { visible ?
-      <CodingPercent submission={submission} /> : ''
-      }
+      <PercentOutput visible={visible} setVisible={setVisible} submission={submission} />
     </div>
   );
 }
