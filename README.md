@@ -27,3 +27,7 @@ AWS DynamoDB
 AWS API Gateway
 AWS Lambda
 Material Ui
+
+#### Tests
+
+I tried implementing Mocha/Chai, but in my 'tests' file you'll see I noted that I couldn't get it to work and I apologize. I tested my AWS routes on my local machine using Postman.
