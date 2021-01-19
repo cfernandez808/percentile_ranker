@@ -15,3 +15,15 @@ Utilized z-scores compared to a standardized normal distribution to obtain perce
 The calculation filters for similar companies to the candidat's based off the absolute value the candidat's company and another being less that 0.15
 
 The calculation also filters by title
+
+### Technologies Used
+
+React.js
+Node.js
+Express
+AWS Amplify
+AWS Cognito
+AWS DynamoDB
+AWS API Gateway
+AWS Lambda
+Material Ui
