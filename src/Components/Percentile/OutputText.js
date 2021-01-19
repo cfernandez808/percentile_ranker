@@ -9,11 +9,14 @@ import Calc from './PercentCalc';
 /* text changes to satisfy 1 company                                            */
 const OutputText = (props) => {
   const [scores, setScores] = useState([])
+  const [companies, setCompanies] = useState([])
 
   /* DynamoDB */
   useEffect(() => {
     API.get('scoreApi', '/scores/candidate_id')
     .then(response => setScores(response))
+    API.get('comapyApi', '/companies/company_id')
+    .then(response => setCompanies(response))
   }, [])
   const {submission} = props;
   const submitNum = Number(submission);
@@ -23,8 +26,8 @@ const OutputText = (props) => {
   const user = {...scores.filter(user => user.candidate_id === submitNum)[0]};
 
   //Calcuations for percentile ranks performed within these classes
-  const comsCalc = new Calc(user, 'communication');
-  const codingCalc = new Calc(user, 'coding');
+  const comsCalc = new Calc(user, 'communication', companies, scores);
+  const codingCalc = new Calc(user, 'coding', companies, scores);
 
   return (
     <React.Fragment>
