@@ -10,11 +10,11 @@ Enter candidate ID on screen
 
 ## Percentile Calculation
 
-Utilized z-scores compared to a standardized normal distribution to obtain percentile ranks of data
+Utilized z-scores compared to a standardized normal distribution curve to obtain percentile ranks of data
 
-The calculation filters for similar companies to the candidat's based off the absolute value the candidate's company and another being less that 0.15
+The calculation filters for similar companies to the candidate's based off the absolute value the candidate's company, and another, being less that 0.15
 
-The calculation also filters by title
+The calculation also filters by the candidate's employment title
 
 ### Technologies Used
 
