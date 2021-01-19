@@ -35,7 +35,7 @@ const PercentOutput = (props) => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="#3D73A3">
+          <Button onClick={handleClose} color="primary">
             Close
           </Button>
         </DialogActions>

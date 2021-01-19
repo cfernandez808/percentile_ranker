@@ -10,6 +10,11 @@
       "StackName": "amplify-percentileranker-dev-191252",
       "StackId": "arn:aws:cloudformation:us-west-2:250835737217:stack/amplify-percentileranker-dev-191252/3aa2f820-5a04-11eb-8a25-02ebfa1f60f5",
       "AmplifyAppId": "d2699inxgidwig"
+    },
+    "categories": {
+      "auth": {
+        "percentilerankerde36b2f5": {}
+      }
     }
   }
 }

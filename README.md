@@ -3,7 +3,7 @@
 Follow this link:
 
 Enter Cognitio credentials:
-Username: mob
-Password: OqQdN!89@2021
+Username: hiSimpleFractal
+Password: jiujitsu808!
 
 Follow on-screen instructions

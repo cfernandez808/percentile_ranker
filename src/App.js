@@ -4,8 +4,7 @@ import InputForm from './InputForm';
 import SubmitBtn from './SubmitBtn';
 import PercentOutput from './PercentOutput';
 
-
-
+import { withAuthenticator } from '@aws-amplify/ui-react';
 
 function App() {
   const [searchId, setSearchId] = useState(0);
@@ -15,6 +14,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <br /> <br />
       <InputForm
         serachId={searchId}
         setSearchId={setSearchId}
@@ -30,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App)
